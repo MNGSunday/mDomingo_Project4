@@ -24,6 +24,7 @@
 4.) References used to complete the assignment
    a. Christopher Boyd
    b. 2D Shooter Videos provided by Christopher Boyd
+   c. Sprites from: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmpzTnBzVVM3VWRGRVJkNng2UEtydldOaTZTUXxBQ3Jtc0trVFpsQ0ZZYXZveDN1VHh5Z01aend1Y3Nnc0l4T1VhNVJ3SGZWbWJqdXNqQkU5TlpyVVBJVWlEMVZuVlFPX0pBSU1xMXFFOU5veE9MNEZTUm9ZZnU4b05iNkJTWXllV0k5Z0xCNjI4TzFINXRVUWZFMA&q=https%3A%2F%2Fansimuz.itch.io%2Fspaceship-shooter-environment
 
 5.) Instructions for running the assignment
    1.) Load the assignment into Unity version 2019.4.19f1
