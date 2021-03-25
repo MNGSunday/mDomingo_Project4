@@ -27,12 +27,8 @@ public class enemy_manager : MonoBehaviour
     {
         timer = 0;
         maxTimer = Random.Range(timerMin, timerMax);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        StartCoroutine("SpawnEnemyTimer");
+        StartCoroutine(SpawnEnemyTimer());
     }
 
     void SpawnEnemy()
@@ -53,15 +49,18 @@ public class enemy_manager : MonoBehaviour
 
     IEnumerator SpawnEnemyTimer()
     {
-        if (timer >= maxTimer)
+        while (true)
         {
-            // Spawn an enemy
-            SpawnEnemy();
-            timer = 0;
-            maxTimer = Random.Range(timerMin, timerMax);
-        }
+            if (timer >= maxTimer)
+            {
+                // Spawn an enemy
+                SpawnEnemy();
+                timer = 0;
+                maxTimer = Random.Range(timerMin, timerMax);
+            }
 
-        timer += 0.1f;
-        yield return new WaitForSeconds(0.1f);
+            timer += 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
